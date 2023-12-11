@@ -1,4 +1,4 @@
-﻿namespace Controle.Domain;
+﻿namespace Controle.Core.BaseEntities;
 
 public abstract class EntityBase
 {

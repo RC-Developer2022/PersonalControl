@@ -1,4 +1,6 @@
-﻿namespace Controle.Domain.Entities;
+﻿using Controle.Core.BaseEntities;
+
+namespace Controle.Domain.Entities;
 
 public class Investments  : EntityBase
 {

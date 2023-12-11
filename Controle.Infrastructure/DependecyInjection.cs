@@ -7,7 +7,7 @@ namespace Controle.Infrastructure;
 
 public static class DependecyInjection 
 {
-    public static IServiceCollection AddDbConfigEntityFrameworkCore(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddDbConfigEntityFrameworkCore(this IServiceCollection services, IConfiguration configuration )
     {
         services.AddDbContext<ControleContext>(x =>
             x.UseSqlServer(configuration.GetConnectionString("SqlServerDb")));

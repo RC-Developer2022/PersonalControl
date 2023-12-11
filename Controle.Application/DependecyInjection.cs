@@ -9,6 +9,7 @@ public static class DependecyInjection
     public static IServiceCollection AddServicesApplication(this IServiceCollection services, IConfiguration configuration) 
     {
         services.AddDbConfigEntityFrameworkCore(configuration);
+        services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
         return services;
     }
